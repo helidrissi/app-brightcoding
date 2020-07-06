@@ -1,11 +1,27 @@
 import {Component} from '@angular/core';
+import {CoursesService} from './courses.service'
 
 
 @Component({
 
 selector: 'courses',
-template:'<h1>Cours de DEV</h1>'
+templateUrl:'./courses.component.html'
 
 })
 
-export class CoursesComponent {}
+export class CoursesComponent {
+
+   title="La list De Tout Mes Cours Premuim";
+   courses;
+
+   constructor(coursesService:CoursesService){
+     
+     this.courses=coursesService.getCourses();
+   }
+
+   getTitle(){
+   
+return this.title;
+   }
+
+}
