@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CourseComponent {
 
+  img ="https://www.streamlike.com/img/pictos/picto_etape--31.png"
+
  
 
 }

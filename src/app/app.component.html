@@ -1,3 +1,8 @@
 <h1>Notre jolie appli</h1>
+
+<input #name type="text" (keyup.enter)="Onkey(name)">
+
+<p>{{Onkey(name)}}</p>
+
 <courses></courses>
 <app-course></app-course>
