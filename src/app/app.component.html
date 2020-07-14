@@ -1,8 +1,14 @@
-<h1>Notre jolie appli</h1>
 
-<input #name type="text" (keyup.enter)="Onkey(name)">
+<!--<button type="button" class="btn btn-success" (click)="Load()">Load</button>
+<ul>
+<li *ngFor="let c of courses ; trackBy:trackByEmpCode" >{{c.id}}{{c.title}}
+    <button type="button" class="btn btn-danger" (click)="deleteCourse(c)">delete</button>
+    <button type="button" class="btn btn-warning" (click)="updateCourse(c)">update</button>
+</li>
 
-<p>{{Onkey(name)}}</p>
+</ul>
+<-->
+<div class="container">
+    <div class="col-md-6 col-md-offset-3"><posts></posts></div>
+</div>
 
-<courses></courses>
-<app-course></app-course>
